@@ -34,7 +34,7 @@ public class Carrinho {
     }
 
     public void vizualizarCarrinho(){
-
+        double total;
         if (itens.isEmpty()){
             System.out.println("Carrinho vazio!");
            return;
@@ -43,6 +43,8 @@ public class Carrinho {
         for (Produto p : itens) {
             System.out.println(p);
         }
+        total = calcularTotal();
+        System.out.println("TOTAL : "+total);
     }
 
     public double calcularTotal(){
