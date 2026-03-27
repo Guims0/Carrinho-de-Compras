@@ -25,5 +25,8 @@ public class Produto {
         return preco;
     }
 
-
+    @Override
+    public String toString() {
+        return "\nID: " + id + " | Produto: " + nome + " | Preço: R$ " + preco+'\n';
+    }
 }
